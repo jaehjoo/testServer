@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar /app/app.jar --server.port=80
+java -Dserver.port=80 -jar /app/app.jar
