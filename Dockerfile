@@ -3,7 +3,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the pre-built JAR file instead of the entire back directory
-COPY ./back/build/libs/*.jar /app/app.jar
+COPY ./back/src/*.jar /app/app.jar
 COPY ./tools/script.sh /usr/local/bin/script.sh
 
 RUN apt-get update && apt-get install -y dumb-init
